@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;        /*when clicking on menu headers it'll be easy and smoothly takes you the part of the webpage*/
+}
+.head{
+   background-color: #5f9ea0 ;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/*-- add photo as the background of the website*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/longblk.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* moves logo img to a little bit a different position*/
+.logo{
+    width: 140px;
+}
+
+/*the "nav ul li" are connected to the html of 'container' whihc is the headers on top and each section is settign the color, font, spacing, positioning, and underlining  */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5f9ea0 ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*now using html of 'header-test' to correctly format position and spacing*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #5f9ea0;
+}
+
+/*-------------------about me section in website -----------*/
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex; /*flex makes contains side-by-side on the webpage*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;    /*make the corner tips on the profpic round edges instead of pointy ones*/
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{                 /*creates font size and color of "About me" section*/
+    color:#fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.about-col-2 h1 span{
+    color: #5f9ea0;
+}
+
+.tab-titles{      /*the 's' in "titles" was put to pulral so that it would change all the tab titles to be horizontal of one another*/
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5f9ea0 ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #78c6c9 ;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*--------------formatting for Services part in website now ----------------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{         /*you add a . in front bc it is refering to a class name in the html file*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;     /*can better understand grid gap in another of his videos*/
+    margin-top: 50px;
+}
+.services-list div{     /*makes the background boxes behind the 3 points*/
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 3000;
+    border-radius: 10px;       /*creates rounded boarder corner tips*/
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{                 /*this creates the differnt sizing of the icons*/
+    font-size: 50px;
+    margin-bottom: 30px
+}
+
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{       /*changes background color when mouse hovers over the 3 points in my services*/
+    background: #5f9ea0 ;
+    transform: translate(-10px);        /*moves hovered box to the left a little when wanting to click it*/
+
+}
+
+/*--------------------------portifolio section-----------------------------*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;     /*can better understand grid gap in another of his videos*/
+    margin-top: 50px;
+}
+.work{      /*formats the pics added*/
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;     /*this code is written for the mouse when it hovers over the images to correctly display the description and link*/
+}
+.layer{
+    width: 100%;
+    height: 0%;     /*is set to 0 bc it hides all the text and links until mouse is hovering over the image*/
+    background: linear-gradient(rgba(0,0,0,0.6), #5f9ea0 );          /*adds the hint color of red with ambre of black on top when hovering over to click on tab*/
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    /*this puts the text on top of pics in the center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;            /*put words in the center of tab when clicking onit*/
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;        /*this line of code 238->made for the hovering to work over images and comes from the bottom up*/
+}
+.layer h3{          /*fixes font*/
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{       /*creates the sizing and placing of description on top of images*/
+    margin-top: 20px;
+    color: #5f9ea0 ;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;       /*meant to increase the height*/
+}
+.btn{           /*this makes the link see more" in the center and changes it color*/
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #5f9ea0 ;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;        /*this goes to the .btn hover background so when it your mouse hovers over the see more its background will turn red box*/
+}
+.btn:hover{
+    background: #5f9ea0 ;
+
+}
+
+
+/*------------------------ Contact section -------------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{        /*this creates a space from other sections in the email part on the website*/
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #5f9ea0 ;     /*adding color to the icons in contact html ---> so the email and number icon*/
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-left h1 span{          /*changed the color only the word "me" in the contact me title section*/
+    color: #5f9ea0;
+}
+
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{                    /*formatting and adding a different color to icons*/
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;         /*when clicking on icons it will hover over them and change color*/
+}
+.social-icons a:hover{
+    color: #5f9ea0 ;
+    transform: translate(-5px);         /*moves the icon up be -5px*/
+}
+.btn.btn2{                      /*creates the submit buttom to have an outline color and round edges*/
+    display: inline-block;
+    background: #5f9ea0 ;
+}
+.contact-right form{
+    width: 100%
+}
+form input, form textarea{          /*creates fonts and and adds color and color background to the commenting section*/
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{                      /*edits the submit button to not be as big fixes its placing and font size*/
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*MIGHT WANT TO HIDE THIS
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #5f9ea0 ;
+}*/
+
+
+
+/*-----------------------CSS for small screens --------------------------------------*/
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/black.jpg);              /*when looking at a smaller screen of website (so like phone, the sizing does not fit, so this code makes it fit */
+    }                                                           /*so now we add a new background when being set to small screen so the background fits and matches*/
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{                       /*edits/formats the menu list*/
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{                             /*puts the about me section in right side portion with a background of the color set to*/
+        background: #5f9ea0 ;
+        position: fixed;
+        top: 0;
+        right: -200px;          /*put -200 bc the width is 200 so need to cancel out*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right;
+    }
+    nav ul li{                  /*makes menu links postioned vertically, so on top of one another (looks better)*/
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{                    /*set the x icon cursor on the top left of the menu sections so viewer can click out of it*/
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    .sub-title{             /*edits font size of "about me" section to fit in a small screen view*/
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;               /*increases image*/
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{          /*edits fonts size and centers "contact section"*/
+        flex-basis: 100%;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}

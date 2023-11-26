@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "cmsc508.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "HR database",
+            "database": "23FA_hr_guzmand",
+            "username": "23FA_guzmand",
+            "password": "Shout4_guzmand_GOME"
+        }
+    ],
+    "liveServer.settings.port": 5501
+}
