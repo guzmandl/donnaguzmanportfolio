@@ -14,7 +14,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logow.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>         <!--the # are for when you click on the headers on top it'll take you to that part on the website-->
                 <li><a href="#about">About</a></li>
@@ -47,19 +47,20 @@
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Programming Languages</span><br>Java, Python, HTML, CSS, SQL, R</li>
-                            <li><span>Technologies</span><br>SPSS, SAS, Git, Pytorch, MySQL, Quarto, Bloomberg, Microsoft Office Suite</li>
-                            <li><span>Certification</span><br> FBI Cybersecurity Regional Collegiate Academy (October 2023)</li>
+                            <li><span>Technologies</span><br>Figma, P5js, Expo, SPSS, SAS, Git, Pytorch, MySQL, Quarto, Bloomberg, Microsoft Office Suite</li>
+                            <li><span>Certification</span><br> FBI Cybersecurity Regional Collegiate Academy, Six Sigma Yellow Belt, CodePath Web Development</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023</span><br>Undergraduate Research Lab | NLP</li>
+                            <li><span>2024</span><br>Undergraduate Research Lab | NLP</li>
                             <li><span>2023</span><br>Research Fellow, ETFs | Robinhood</li>
-                            <li><span>2023</span><br>Teaching Assistant | Intro to Java Programming</li>
+                            <li><span>2024</span><br>Teaching Assistant | Intro to Java Programming</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -67,6 +68,11 @@
                             <li><span>2024</span><br>B.S. in Criminal Justice at VCU</li>
                             <li><span>2024</span><br>B.S. in Psychology at VCU</li>
                             <li><span>2024</span><br>Minor in Computer Science</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="awards">
+                        <ul>
+                            <li><span>2023</span><br> Winner of Robinhood Research Fellow Portfolio Competiton</li>
                         </ul>
                     </div>
             </div>
@@ -82,19 +88,19 @@
             <div>                           <!--if wanting to add icons on tops of these go back to video at 49min for it to show you how-->
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p>alsdjfklsdjfijawefjwoeijfoiaewjdfwjeofdjflsdjf</p>
+                <!-- <p></p> put soemting in it -->
                 <a href="#">learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop"></i>
                 <h2>Data Design</h2>
-                <p>alsdjfklsdjfijawefjwoeijfoiaewjdfwjeofdjflsdjf</p>
+                <!-- <p>PUT SOMETHING HERE</p> -->
                 <a href="#">learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
-                <p>alsdjfklsdjfijawefjwoeijfoiaewjdfwjeofdjflsdjf</p>
+                <!-- <p>PUT SOMETHING HERE</p> -->
                 <a href="#">learn more</a>
             </div>
         </div>
@@ -128,10 +134,12 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/us.jpg">
+                <img src="images/eliza.png">
                 <div class="layer">
-                    <h3>Something App</h3>
-                    <p>THe app connects you to the talened people aroudn the world. download it from play store, blah blah</p>
+                    <h3>Eliza</h3>
+                    <p>This program emulates a psychotherapist named Eliza, engaging in conversation with the user. The primary objective is to provide a 
+                        simulated counseling experience. The program interacts by recognizing certain keywords and responding accordingly. The conversation 
+                        continues until the user decides to exit the program.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
                         <!--from the icon website like above, put free link in this space</a> this code will put the little 
                         icon on the bottom of the pic to let users click on it to take it the app/website-->
@@ -201,7 +209,7 @@
     function closemenu(){
         sidemeu.style.right = "-200px"
     }
-</script>
+</script> 
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyAnOu28GQmpiBl3AZ2lz_NiWLh9hZAJlksD4E0EomNVjgY02AI8lxnyEaZztkMNDo4/exec'

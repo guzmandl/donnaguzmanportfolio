@@ -8,18 +8,18 @@ html{
     scroll-behavior: smooth;        /*when clicking on menu headers it'll be easy and smoothly takes you the part of the webpage*/
 }
 .head{
-   background-color: #5f9ea0 ;
+   background-color: #C19A6B ;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: #fff;
+    color: #321414;
 }
 
 /*-- add photo as the background of the website*/
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/longblk.png);
+    background-image: url(images/longwhi.png);
     background-size: cover;
     background-position: center;
 }
@@ -47,7 +47,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #321414;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -57,7 +57,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #5f9ea0 ;
+    background: #C19A6B ;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -81,14 +81,14 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #5f9ea0;
+    color: #C19A6B;
 }
 
 /*-------------------about me section in website -----------*/
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #321414;
 }
 .row{
     display: flex; /*flex makes contains side-by-side on the webpage*/
@@ -108,12 +108,12 @@ nav ul li a:hover::after{
 }
 
 .sub-title{                 /*creates font size and color of "About me" section*/
-    color:#fff;
+    color:#321414;
     font-size: 60px;
     font-weight: 600;
 }
 .about-col-2 h1 span{
-    color: #5f9ea0;
+    color: #C19A6B;
 }
 
 .tab-titles{      /*the 's' in "titles" was put to pulral so that it would change all the tab titles to be horizontal of one another*/
@@ -133,7 +133,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #5f9ea0 ;
+    background: #C19A6B ;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -150,7 +150,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #78c6c9 ;
+    color: #C19A6B ;
     font-size: 14px;
 }
 
@@ -173,7 +173,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{     /*makes the background boxes behind the 3 points*/
-    background: #262626;
+    background: #C19A6B;
     padding: 40px;
     font-size: 13px;
     font-weight: 3000;
@@ -194,14 +194,14 @@ nav ul li a:hover::after{
 
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #321414;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover{       /*changes background color when mouse hovers over the 3 points in my services*/
-    background: #5f9ea0 ;
+    background: #C19A6B ;
     transform: translate(-10px);        /*moves hovered box to the left a little when wanting to click it*/
 
 }
@@ -227,10 +227,11 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;     /*this code is written for the mouse when it hovers over the images to correctly display the description and link*/
 }
+
 .layer{
     width: 100%;
     height: 0%;     /*is set to 0 bc it hides all the text and links until mouse is hovering over the image*/
-    background: linear-gradient(rgba(0,0,0,0.6), #5f9ea0 );          /*adds the hint color of red with ambre of black on top when hovering over to click on tab*/
+    background: linear-gradient(rgba(193,154,107,0.6), #321414);          /*adds the hint color of red with ambre of black on top when hovering over to click on tab*/
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -254,11 +255,11 @@ nav ul li a:hover::after{
 
 .layer a{       /*creates the sizing and placing of description on top of images*/
     margin-top: 20px;
-    color: #5f9ea0 ;
+    color: #C19A6B ;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #321414;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -274,15 +275,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #5f9ea0 ;
+    border: 1px solid #C19A6B ;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #321414;
     transition: background 0.5s;        /*this goes to the .btn hover background so when it your mouse hovers over the see more its background will turn red box*/
 }
 .btn:hover{
-    background: #5f9ea0 ;
+    background: #C19A6B ;
 
 }
 
@@ -299,12 +300,12 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #5f9ea0 ;     /*adding color to the icons in contact html ---> so the email and number icon*/
+    color: #C19A6B ;     /*adding color to the icons in contact html ---> so the email and number icon*/
     margin-right: 15px;
     font-size: 25px;
 }
 .contact-left h1 span{          /*changed the color only the word "me" in the contact me title section*/
-    color: #5f9ea0;
+    color: #C19A6B;
 }
 
 .social-icons{
@@ -315,17 +316,17 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 30px;
-    color: #ababab;
+    color: #321414;
     display: inline-block;
     transition: transform 0.5s;         /*when clicking on icons it will hover over them and change color*/
 }
 .social-icons a:hover{
-    color: #5f9ea0 ;
+    color: #C19A6B ;
     transform: translate(-5px);         /*moves the icon up be -5px*/
 }
 .btn.btn2{                      /*creates the submit buttom to have an outline color and round edges*/
     display: inline-block;
-    background: #5f9ea0 ;
+    background: #C19A6B ;
 }
 .contact-right form{
     width: 100%
@@ -334,12 +335,12 @@ form input, form textarea{          /*creates fonts and and adds color and color
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    border: #C19A6B 1px solid;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #321414;
     font-size: 18px;
-    border-radius: 6px;
+    border-radius: 1rem;
 }
 
 form .btn2{                      /*edits the submit button to not be as big fixes its placing and font size*/
@@ -358,7 +359,7 @@ form .btn2{                      /*edits the submit button to not be as big fixe
     margin-top: 20px;
 }
 .copyright i{
-    color: #5f9ea0 ;
+    color: #C19A6B ;
 }*/
 
 
@@ -370,7 +371,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/black.jpg);              /*when looking at a smaller screen of website (so like phone, the sizing does not fit, so this code makes it fit */
+        background-image: url(images/white.jpg);              /*when looking at a smaller screen of website (so like phone, the sizing does not fit, so this code makes it fit */
     }                                                           /*so now we add a new background when being set to small screen so the background fits and matches*/
     .header-text{
         margin-top: 100%;
@@ -384,7 +385,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{                             /*puts the about me section in right side portion with a background of the color set to*/
-        background: #5f9ea0 ;
+        background: #C19A6B ;
         position: fixed;
         top: 0;
         right: -200px;          /*put -200 bc the width is 200 so need to cancel out*/
@@ -427,7 +428,7 @@ nav .fas{
     }
 }
 #msg{
-    color: #61b752;
+    color: #321414;
     margin-top: -40px;
     display: block;
 }
